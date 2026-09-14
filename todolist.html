@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-Do List - Dewanti</title>
+
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-yellow-50 text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-5">
+
+            <div class="flex flex-wrap justify-between items-center gap-4">
+
+                <!-- Logo -->
+                <a href="index.html"
+                    class="text-2xl md:text-3xl font-bold text-pink-500">
+                    Dewanti
+                </a>
+
+                <!-- Menu -->
+                <div class="flex flex-wrap items-center gap-5 md:gap-8 text-sm md:text-base">
+
+                    <a href="index.html"
+                        class="text-gray-700 hover:text-pink-500 transition duration-300">
+                        Home
+                    </a>
+
+                    <a href="about.html"
+                        class="text-gray-700 hover:text-pink-500 transition duration-300">
+                        About
+                    </a>
+
+                    <a href="education.html"
+                        class="text-gray-700 hover:text-pink-500 transition duration-300">
+                        Education
+                    </a>
+
+                    <a href="organization.html"
+                        class="text-gray-700 hover:text-pink-500 transition duration-300">
+                        Organization
+                    </a>
+
+                    <a href="contact.html"
+                        class="text-gray-700 hover:text-pink-500 transition duration-300">
+                        Contact
+                    </a>
+
+                    <a href="todolist.html"
+                        class="text-pink-500 font-semibold border-b-2 border-pink-400 pb-1">
+                        To-Do List
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- TO-DO LIST -->
+    <section class="relative overflow-hidden min-h-[calc(100vh-80px)] flex items-center">
+
+        <div class="absolute -top-24 -left-24 w-64 h-64
+            bg-pink-200 rounded-full opacity-50">
+        </div>
+
+        <div class="absolute -bottom-32 -right-20 w-80 h-80
+            bg-pink-200 rounded-full opacity-50">
+        </div>
+
+        <div class="relative max-w-2xl mx-auto px-6 py-16 w-full">
+
+            <div class="text-center mb-10">
+
+                <p class="text-pink-500 font-semibold text-lg mb-2">
+                    JavaScript Project ♡
+                </p>
+
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-700 mb-4">
+                    My To-Do List
+                </h1>
+
+                <p class="text-gray-600">
+                    Catat kegiatan yang ingin kamu lakukan hari ini.
+                </p>
+            </div>
+
+            <div class="bg-white rounded-3xl border-2 border-pink-100
+                shadow-lg p-6 md:p-8">
+
+                <div class="flex flex-col sm:flex-row gap-3 mb-6">
+
+                    <input type="text"
+                        id="taskInput"
+                        placeholder="Masukkan kegiatan..."
+                        class="flex-1 border border-gray-200
+                        rounded-xl px-4 py-3
+                        bg-yellow-50
+                        focus:outline-none
+                        focus:ring-2 focus:ring-pink-300
+                        focus:border-pink-300">
+
+                    <button id="addButton"
+                        class="bg-pink-400 text-white font-semibold
+                        px-6 py-3 rounded-xl
+                        hover:bg-pink-500
+                        transition duration-300">
+
+                        Tambah
+                    </button>
+                </div>
+
+                <ul id="taskList" class="space-y-3">
+
+                    <!-- Tugas akan muncul di sini -->
+
+                </ul>
+
+                <p id="emptyMessage"
+                    class="text-center text-gray-400 py-5">
+
+                    Belum ada kegiatan. Yuk tambahkan! ♡
+                </p>
+
+          </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
