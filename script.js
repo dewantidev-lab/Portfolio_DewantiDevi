@@ -1,6 +1,4 @@
-// ==============================
 // TO-DO LIST
-// ==============================
 
 const taskInput = document.getElementById("taskInput");
 const addButton = document.getElementById("addButton");
@@ -117,10 +115,7 @@ if (taskInput && addButton && taskList && emptyMessage) {
     displayTasks();
 }
 
-
-// ==============================
 // CONTACT FORM
-// ==============================
 
 const contactForm = document.getElementById("contactForm");
 
@@ -149,9 +144,7 @@ if (contactForm) {
 
 }
 
-// ==============================
 // CONTACT FORM
-// ==============================
 
 const contactForm = document.getElementById("contactForm");
 
